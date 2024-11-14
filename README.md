@@ -1,8 +1,13 @@
-# React + Vite
+## MARKETPLACE APPLICATION Using REACT
+### Objective:
+Task is to create a user-friendly dynamic webpage for Marketplace application using ReactJS where users can discover different services or products. Each item called an advertisement, includes details like title, description, image, and contact information. The  page  should  be  composed  of  several  components  that  efficiently  handle 
+different aspects of the marketplace.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Steps:
+1. Display Advertisements
+2. Contact Information Toggle
+3. Details Button Toggle
+4. Styling using Bootstrap
+5. Component based approach using REACT JS needs to be followed.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Design a Marketplace dynamic webpage with ReactJS according to the provided template: [MarketplaceTemplate](doc/Marketplace_REACT.pdf)
