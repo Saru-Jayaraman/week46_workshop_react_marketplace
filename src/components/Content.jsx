@@ -63,14 +63,14 @@ const Content = () => {
                         <h5 className="card-title">{eachItem.title}</h5>
                         <p className="card-text">{eachItem.specification}</p>
                         <h4 className="card-text text-danger fw-bolder">{eachItem.price}</h4>
-                        <p className="card-text fw-bolder">Contact: <span className="card-text fw-bolder spanElement" id={`contact-${index}`}>*****</span></p>
+                        <p className="card-text fw-bolder">Contact: <span className="card-text fw-bolder" id={`contact-${index}`}>*****</span></p>
                     </div>
                     <div className="card-footer text-center">
                         <button className="btn btn-info btn-block mx-2 contactButton" data-index={index} onClick={toggleContact}>Show Contact</button>
                         <button className="btn btn-info btn-block mx-2 detailsButton" data-index={index} onClick={showDetails}>Show Details</button>
                     </div>
                     <div className="card-text">
-                        <div className="details-tab"  id={`details-${index}`} style={{display: "none", padding: "10px", marginTop: "1px", backgroundColor: "lightgrey"}}>
+                        <div id={`details-${index}`} style={{display: "none", padding: "10px", marginTop: "1px", backgroundColor: "lightgrey"}}>
                             <p><strong>Description: </strong>{eachItem.description}</p>
                         </div>
                     </div>
@@ -78,14 +78,7 @@ const Content = () => {
             </div>
             return eachCard;
         });
-        setAttrId();
         return advertisementsDiv;
-    };
-
-    const setAttrId = () => {
-        document.querySelectorAll('.spanElement').forEach((contact, index) => {
-            contact.setAttribute('id', "contact-".concat(index));
-        });
     };
 
     const toggleContact = ((event) => {
